@@ -58,6 +58,8 @@ I tend to use both words. It simply depends on who I talk to. “Typeface” mig
 
 We don’t read letter per letter. We only do that when we’re children and are still learning to read. After that we read word by word. The words that we’ve become familiar with are stored in our brains. So reading is basically recognising shapes of words. Our eyes constantly move left and right in the process of reading. They do that so quickly that we don’t even notice. These eye movements are called saccades. They’re broken up by fixations which usually come at the end of words. After each line of text our eyes get a longer break as we switch focus to the next line in the text. Make these lines too long and the eyes will get tired quicker. Make the spacing between the lines too tight and our eyes will get confused on which line to start reading.
 
+![Figure 3: Saccades, eye movements, illustrated (Source: A List Apart).](figure-23.jpg)
+
 Typography can improve a text’s readability by following the basic general principles that have been developed since the first printing machine back in the 15th century. These general principles are adapted to the way we read.
 
 A well designed and type set text is easier to read because it takes these considerations into account. This is why type size (and colour), measure (line width) and leading (line-height) are so important. With these we literally shape the reading experience. There’s typographers that do this for books and graphic designers that do it for magazines and other printed media. On the web, this task falls somewhere between the web designer and web developer. In rare cases, this would be the same person.
@@ -67,10 +69,15 @@ A well designed and type set text is easier to read because it takes these consi
 One of the mistakes that most web sites make is that they make the main body text too small. Back in early 2000s it was common practice to set the body text to a size of around 11px. But back then the screens were smaller with lower screen resolutions. 11px back then was larger than it is now.
 
 A common rule for setting the body text is to set it to a size that would match the size of the text in a book at an arm’s length distance.
+
+![Figure 4: Matching the font size with the text size from a book at an arm’s length. (Source: iA)
+](figure-24.png)
  
 Recommended size for today’s screens is 16px for mobile and from 18 to 22 px for desktop. This also depends on the typeface. As we’ll see later in the course, some typefaces set at 16px may seem larger than others.
 
 “Type colour” in typography doesn’t mean actual colour like red, blue or green. Type colour means how heavy black type on a light background looks like. A typeface of the same size and same weight may seem heavier than another one.  
+
+![Figure 5: The same text set in Merriweather seems larger and heavier than when set in Georgia.](figure-25.jpg)
 
 ### Line width (measure)
 
