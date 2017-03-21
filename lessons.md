@@ -6,6 +6,7 @@ Created by [Matej Latin](https://betterwebtype.com/)
 1. [Introduction to typography](#1-introduction-to-typography)
 2. [Equilateral triangle of a perfect paragraph](#2-equilateral-triangle-of-a-perfect-paragraph)
 3. [Anatomy of a typeface](#3-anatomy-of-a-typeface)
+4. [Choosing Typefaces](#4-choosing-typefaces)
 
 ## 1. Introduction to typography
 “Perfect typography is more science than an art” is a famous quote attributed to Jan Tschichold—the man that published his revolutionary book The New Typography in 1927. He, among other typographers from that era, had a profound impact in the field of typography. >?
@@ -187,4 +188,86 @@ We’ll come back to x-height in the lesson about combining typefaces so keep it
 ### Explore further
 * [Type Classifications](https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/type-classifications)
 * [Anatomy of a typeface](http://typedia.com/learn/only/anatomy-of-a-typeface/)
+
+## 4 Choosing typefaces
+> In the new computer age the proliferation of typefaces and type manipulations represents a new level of visual pollution threatening our > culture. Out of thousands of typefaces, all we need are a few basic ones, and trash the rest.
+—Massimo Vignelli
+
+One of the greatest visual communicators, Massimo Vignelli, made a career by only using 6 typefaces. And he produced a lot of graphic design work in his life. For him, all the many typefaces presented noise and pollution. He saw them as distractions—meaningless trends that come and go. His view was quite radical but I think he had a point. There’s so many typefaces out there that it’s hard to know how to separate the good from the bad. And believe me, there’s more of the latter than the former.
+
+![Figure 23: Massimo Vignelli’s 6 typefaces (Source: Fontsinuse.com).](figure-423.jpg)
+Figure 23: Massimo Vignelli’s 6 typefaces (Source: Fontsinuse.com).
+
+Choosing a typeface for a website is more often than not a mindless decision based on personal preferences. What looks good to the designer is sadly more important than what the readers expect. There’s no connection with the content and so no real relationship with the person reading either. Typography must invite the reader into text. I quoted Robert Bringhurst in the first lesson already. I’m quoting him again because I think this is the most important goal of typography.
+
+It’s not about how many typefaces we have to choose from. Or how many times we used a particular one. It’s not about its popularity and it’s not about the trends either. Choosing typefaces based on trends will only assure our websites fading into faceless artefacts without identity. The question is not really which typeface to use, it’s what will you do with that typeface.
+
+Typography has many definitions. Depending on whom you ask, each will tell you a slightly different idea of what typography is and what defines it. But none of the best minds in the typography field ever said that typography is about choosing typefaces alone. Typefaces are merely tools. With them, we give a shape to the information we want the reader to consume. So the question isn’t what typeface should we use. The right question is what typeface should we use to best match the content. Therefore, typefaces, or even typography, and information (content) are inseparable. One does not exist without the other.
+
+### Web-safe fonts don’t suck
+Times when we had just a few of typefaces to choose from are far behind us. I remember how I’d always check what fonts are web-safe when I first started doing professional web design work. There weren’t many to choose from but I still forgot most of them. Most of the times, I just wanted to get rid of that default look of a website that came with Times New Roman. Soon I started to connect it to whenever something didn’t work or I messed up something in CSS. That negative connotation with it stopped me from realizing that Times New Roman is a nice typeface. I don’t think I ever used it at all.
+
+![Figure 24: Two beautiful typefaces that don’t cost a thing (zero dollars, zero kilobytes).](figure-424.jpg)
+Figure 24: Two beautiful typefaces that don’t cost a thing (zero dollars, zero kilobytes).
+
+But think about it. Times New Roman and Georgia. Both are very nice serifed typefaces that don’t affect your website's loading time. Georgia was specifically designed for digital use. It was meant to be used on screens. It looks a bit narrower and taller than Times New Roman. A bit more modern. Have you ever used any of these typefaces? Why not? Why not give them a try now?
+
+![Figure 25: A website set in Georgia only.](figure-425.jpg)
+Figure 25: A website set in Georgia only.
+
+Web safe fonts should remain an option. Especially when it comes to large scale websites that need to work on various devices—not just the fancy iPhones or MacBooks. What about the devices with a poor connection to the internet? 200 kb of a fancy font might be the difference between a returning visitor and a bounce.
+
+### Web fonts and FOUT
+There’s another problem when it comes to loading custom web fonts. The so called “flash of unstyled text” or FOUT. It’s that second or two when the content of the website is loaded already but the custom web font isn’t yet. It’s a second or two and a desktop with broadband connection but it may be a few second or more on a mobile with 3G. Keep this in mind.
+
+What is the problem with FOUT? I think most people just hated seeing the shifting between the fonts on their website. [It does look a bit strange](http://martinwolf.org/wp-content/uploads/2014/12/fout.gif). So people started to solve this by hiding the text until the font loaded—FOIT (flash of invisible text). I used to do this too, but there’s a problem with that. Let’s say that the font that you want to use doesn’t load for some reason. Your website is waiting for it to load and has hidden the text in its anticipation. The font doesn’t ever load and the text stays invisible. That sucks. There’s people who set a timer on the waiting and load the web safe font after x seconds. That’s just a nasty solution. My suggestion is just let it be. Stick with the FOUT, just try to match the web-safe and your custom fonts to minimize the difference. There are other solutions in the further reading section if you want to dive in.
+
+### Things to consider when choosing typefaces
+I tried sorting these by assigning a priority to each but it was really hard to do. I think these considerations should be taken into account almost equally but still managed to sort by some sort of priority.
+
+### Goals
+What is the goal of your text? Or even, of your website? Is it a place where people come to read medium to long articles? Or is it a website where most people are expected to scan the content, looking for something particular?
+
+### The text
+This is the most important step everyone skips or even completely ignores. So many web designers design pretty pictures of web sites in their perfect shapes. Most of them still use Lorem Ipsum as dummy text. Find out what the website is about instead. What type of content will be published? News? Blog posts? Poems? Essays? Get some content samples. This is important. How will your typeface choice complement the content and the information on the website if you don’t read it? At this point you probably thinking: “read it??” Yes, read it. “But I don’t have time, I have pages to design, lines of code to write. I have deadlines to hit.” Excuses. You’ll never get better in choosing typefaces if you ignore the content. What is the author trying to convey? Don’t design without content. Don’t use dummy text. At worst, use similar content—find something similar online.
+
+### Typeface
+What are you after? What is the content of the website? What typeface would complement that content in a most objective way? What are the people that will read this used to? What do they expect? Will a modern geometric sans-serif seem off? Should we go for a modern serif instead?
+
+### Body text or headings?
+Are you choosing a typeface for body text or will it be for titles only? Will the two be different? Will one work well with the other? (We’ll cover the topic of combining typefaces in the next lesson). This is an important question that needs to be addressed early in the process. If the typeface is for body text, you should pay particular attention to the readability of longer texts set in it.
+
+### Weights and styles
+Does the typeface come with the basic weights and styles? Bold, italic and bold italic? Are there more weights? Some typefaces have numerous weights and styles and are commonly being referred to as workhorse typefaces. Even if they do, use only a few weights. Two or three should suffice.  Some may only come in one weight or style. I recommend avoiding these. They’ll limit you too much.
+
+### Fonts size in Kb
+This depends on all considerations mentioned so far. Some typefaces will be heavier than others. Serifs are generally heavier in Kb than the sans-serifs. Some bold styles are bolder than others which, again, affects the size in Kb. So does how many weights you want to use. I tend to avoid using the bold italic so I can usually save a few Kbs by excluding those.
+
+### Opentype features & language support
+I consider the Opentype features a bonus. If there are two typefaces that I’m considering and one supports the Opentype features and the other doesn’t, I’ll go for the one that does. Not all typefaces support these features and even the ones that do, don’t always support all of them. We’ll get to Opentype features in the later stages of this course.
+
+What language will the website be in? English only? Multiple languages? The Latin language range should suffice for most western languages but here’s a trick. If your website is a single-language only, you can save a few kilobytes by excluding all other. My websites have been English only for a while now so I always choose that set of characters alone. Sometimes it can save up to 20 kilobytes. If the language that your website is in requires special characters, make sure that the font you want to use has those.
+
+![Figure 26: Poligon.si uses a font without the required characters č, š and ž.](figure-426.jpg)
+Figure 26: Poligon.si uses a font without the required characters č, š and ž.
+
+### Reviewing typefaces
+Don’t look at typefaces in Photoshop, Sketch or some other graphic design tool. Your content will not appear there. It will be displayed as part of a website in a web browser. Multiple web browsers actually. Try your main typeface in different sizes, colours and different browsers. Each has a different way of rendering fonts (Firefox is known to render all fonts a bit heavier than others). Try it on different OS systems as well. Don’t just design a fancy looking visual design of a website on your MacBook Retina and make decisions based on that. Try what it looks like on Windows and on other screens.
+
+Note: if you don’t know how to set your text in HTML and apply CSS to it, you should preview the typefaces on the font provider's’ website. In the worst case use the Font Changer plugin below. Find a website with decent typography (I recommend Web Font Specimen) and change the font to the one you want to use.
+
+### Task
+Now that you learned about the anatomy of typefaces and the considerations of choosing them, it's time to explore the web. Install the [What Font](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en) or [Fontface Ninja]() plugin. Whenever you stumble upon a typeface on a website that you like, look it up. Check what font the website is using, what’s the size, the line-height and the weight/style. 
+
+### Explore further
+1. [Font Changer with Google Fonts](https://chrome.google.com/webstore/detail/font-changer-with-google/jgjhhoglgjdklldfgoffdiaceffijeke?hl=en)
+2. [Web Font Specimen](http://webfontspecimen.com/)
+4. [Massimo Vignelli’s 6 typefaces](https://fontsinuse.com/uses/14164/massimo-vignelli-s-a-few-basic-typefaces)
+4. [FOUT, FOIT, FOFT](https://css-tricks.com/fout-foit-foft/)
+5. [Times New Roman](https://www.youtube.com/watch?v=-cGUaBbT0bA)
+
+
+
+
+
 
