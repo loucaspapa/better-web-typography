@@ -95,7 +95,7 @@ Figure 6: Recommended line width in Google’s Material Design Guidelines (Sourc
 
 Line-height, or leading as it’s usually referred to in print, is the main pillar of rhythm in typography. We’ll cover that later in the course, in the lesson 6—Rhythm in web typography. For now, let’s take a look at what affects the line-height.
 
-![Figure 7: Line-height (leading) works different on the web. It’s evenly distributed below and above the line of text.](figure-27.png)
+![Figure 7: Line-height (leading) works different on the web. It’s evenly distributed below and above the line of text.](figure-27.jpg)
 Figure 7: Line-height (leading) works different on the web. It’s evenly distributed below and above the line of text.
  
 Too many designers or web developers that I’ve met think of line-height as an isolated text feature. So they tend to set it based on what seems right. Consequently, line-height is something that gets set without too much consideration. But line-height is too important to be set so mindlessly. The width of the lines affects the line-height. The longer the lines, the more space between them is required. Type size affects the line-height. The larger the type, the larger the line-height should be as well. Type colour affects it too. Darker and heavier type requires more space between the lines. And in the end, the typeface itself may affect it as well. We’ll cover these later in the course but I already mentioned that some typeface may seem larger than others. Some, mostly serifed typefaces, will seem heavier. Those will require more space between the lines too.
