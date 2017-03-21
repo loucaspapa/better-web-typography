@@ -1,4 +1,6 @@
-# Typography newsletter by Matej from Better Web Type
+# BETTER WEB TYPOGRAPHY FOR A BETTER WEB
+Better Web Type is an easy-to-follow web typography email course for web designers & web developers.
+Created by [Matej Latin](https://betterwebtype.com/)
 
 ## Lessons
 * [1.1 Introduction to typography](#11-introduction-to-typography)
