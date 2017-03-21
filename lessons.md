@@ -314,7 +314,7 @@ Figure 31: An old brick wall and modern furniture in the same room. Harmony thro
 
 How can we apply this to typography? Let’s take the Baskerville typeface for our main body text. Baskerville was designed by John Baskerville in 1754. It was a modern typeface at the time as it was pushing the boundaries of what was possible in typography. It’s perceived as a classic these days though. It evokes feeling of trust and warmth. Based on an experiment, conducted by Errol Morris, it’s the most trusted typeface around. Now let’s complement it with an uppercase-only Futura for headings. Futura was designed by Paul Renner in 1927. It’s a geometric sans-serif typeface. It felt very modern when it was designed and it still feels modern to this day. It’s the most used typeface on the web at the moment.
 
-![Figure 32: Harmony through contrast—Futura and Baskerville combined (content adapted from idsgn.org).](figure-532.jpg)
+![Figure 32: Harmony through contrast—Futura and Baskerville combined (content adapted from idsgn.org).](figure-532.png)
 Figure 32: Harmony through contrast—Futura and Baskerville combined (content adapted from idsgn.org).
 
 Our design looks rich. Luxurious. It has a story to tell. But most importantly—it works. It uses two typeface classics from different time periods. Each comes from the opposite of the scale between modern/cold and classic/warm. Together, they’re like fire and ice that turn into flowing water. Harmony through contrast. This brings us to the first type of evaluating typeface combinations: based on history.
