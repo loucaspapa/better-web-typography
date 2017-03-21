@@ -266,6 +266,86 @@ Now that you learned about the anatomy of typefaces and the considerations of ch
 4. [FOUT, FOIT, FOFT](https://css-tricks.com/fout-foit-foft/)
 5. [Times New Roman](https://www.youtube.com/watch?v=-cGUaBbT0bA)
 
+## 5 Combining Typefaces
+Bad typography on the web in the early years of the internet was often blamed on the poor range of typefaces available. But we already learned that typography is not about choosing typefaces. It’s about presenting information in a way that is readable. So the question that we need to answer is: do we really need more than one typeface?
+![Figure 27: Typographic work in a single typeface—Baskerville.](figure-527.jpg)
+Figure 27: Typographic work in a single typeface—Baskerville.
+
+> It is a safe rule not to mix different styles of letters on the same page, or different faces of type in the same book.
+
+—Eric Gill
+
+Combining typefaces is probably one of the trickiest parts in typography. There’s no definite rules to follow. Which makes it even harder. There are guidelines and best practices but you’ll need to spend more time exploring typefaces and trying out different combinations. I like to believe that in typography, if it’s done well, anything goes. As it is with most things in typography, it’s only a matter of how much time you’re willing to invest.
+
+If you do believe that a second typeface is needed in your design, if you’re ok with spending some time exploring the universe of typefaces instead of drawing and coding websites, then here’s a four step process that will help you get better at it.
+
+![figure-501](figure-501.jpg)
+
+### 1 Find an anchor
+At this point you should have your main typeface—the one you want to use for your body text. Just like we described in the previous chapter: you’ve read the text, you know what the website is about, you have a sample of the content, you tried previewing it in different web browsers and you decided that this is the typeface you want to go with. Now let’s find a secondary typeface that will complement it well.
+
+### 2 Find secondary typefaces for possible combinations
+This is probably the most time consuming task in the process. Maybe even the most time consuming task in typography. It’s time to explore the universe of typefaces. I know that when I start doing that, I’m completely disconnected from the world for a couple of hours. At least. But where do you start? At first you might just add a few typefaces that you like to the list of possible candidates. Maybe it’s a typeface you used before. Maybe it’s the one you’ve been saving to use for a project just because you like it that much. Give it a try, put it on the list.
+
+There’s many web font providers out there. Google Fonts is probably the most widespread. Offering fonts for free probably helps but it comes with a setback. Most of the fonts there are rubbish. This doesn’t mean that you can’t find good ones. Searching the fonts directory is quite limited. The most helpful part is probably just excluding or including certain categories.
+![Figure 28: Google Fonts is a popular font directory but with limited filtering capabilities.](figure-528.jpg)
+Figure 28: Google Fonts is a popular font directory but with limited filtering capabilities.
+
+Fonts.com comes with a bit more sophisticated filters. It allows us to filter fonts by weight, width, x-height and figure styles. TypeKit comes with, in my opinion, the best options to filter fonts. Especially for people who just started to explore this vast universe. It comes with filters for width, weight, contrast, x-height, figure styles, and a recommendation for either paragraphs or headings. All of them come with the ability to filter by languages supported which should be a deciding factor in the process.
+
+![Figure 29: Fonts.com comes with a vast collection of fonts and a better way to filter them than Google.](figure-529.jpg)
+Figure 29: Fonts.com comes with a vast collection of fonts and a better way to filter them than Google.
+
+![Figure 30: TypeKit has a very good fonts filtering system. It allows to filter by classification, recommendations for either body text or headings, and other typeface properties like weight, width, x-height, contrast, figure style etc.](figure-530)
+Figure 30: TypeKit has a very good fonts filtering system. It allows to filter by classification, recommendations for either body text or headings, and other typeface properties like weight, width, x-height, contrast, figure style etc.
+
+Filter the list to match what you’re looking for and start browsing. Whenever you see something you like, something you think fits your grand design, add it to the list of potential candidates. Try not to spend too much time on this. Don’t go too deep into exploring each typeface at this stage yet.
+
+### 3 Evaluate the combination
+I recommend doing this in the browser, possibly in the right context. Do you have an early design of the website? Use that. Do you have a slight idea of what the layout will be like? Make a quick prototype. Don’t know how to code? Pair up with your developer. Don’t know much about the design and the project? Pair up with your designer. Remember that both roles are important in web typography. If your skills are one-sided, working together is key to producing better web typography.
+
+Contrast and uniformity are the two most basic principles when it comes to design, architecture and art. Both are crucial when it comes to typography as well. Some evaluations described in this process will only work as a contrasting combination, some only as a uniform one and some as both. Let’s take a look at a real-life example.
+
+Take a look at this photo of a living room. How would you describe it? It feels modern, right? But there’s something else. It feels warm, too. Unusual for living rooms with modern, futuristic furniture. Yet, this one does. The brick wall brings this feeling of warmth and coziness to a room that would look cold without it. This is a great example of contrast in interior design. Through contrast, the designer was able to achieve perfect harmony between modern and warm.
+
+![Figure 31: An old brick wall and modern furniture in the same room. Harmony through contrast (Source: home-designing.com).](figure-531.jpg)
+Figure 31: An old brick wall and modern furniture in the same room. Harmony through contrast (Source: home-designing.com).
+
+How can we apply this to typography? Let’s take the Baskerville typeface for our main body text. Baskerville was designed by John Baskerville in 1754. It was a modern typeface at the time as it was pushing the boundaries of what was possible in typography. It’s perceived as a classic these days though. It evokes feeling of trust and warmth. Based on an experiment, conducted by Errol Morris, it’s the most trusted typeface around. Now let’s complement it with an uppercase-only Futura for headings. Futura was designed by Paul Renner in 1927. It’s a geometric sans-serif typeface. It felt very modern when it was designed and it still feels modern to this day. It’s the most used typeface on the web at the moment.
+
+![Figure 32: Harmony through contrast—Futura and Baskerville combined (content adapted from idsgn.org).](figure-532.jpg)
+Figure 32: Harmony through contrast—Futura and Baskerville combined (content adapted from idsgn.org).
+
+Our design looks rich. Luxurious. It has a story to tell. But most importantly—it works. It uses two typeface classics from different time periods. Each comes from the opposite of the scale between modern/cold and classic/warm. Together, they’re like fire and ice that turn into flowing water. Harmony through contrast. This brings us to the first type of evaluating typeface combinations: based on history.
+
+### Based on history
+Evaluating typefaces based on the time period works well with contrast or harmony. You could choose two typefaces that are very far apart or from the same time period. Both should work.
+
+![Figure 33: There’s almost 300 years separating creations of Baskerville and Futura.](figure-533.jpg)
+I find that this approach works best with typefaces that were designed before the digital revolution. There’s just too many typefaces being designed at the moment. Pairing them solely on the fact that they’re from the same time period might not be enough.
+
+### Combining typefaces based on x-height
+Remember when I told you to remember x-height in lesson 3 about the anatomy of typefaces? This is where it comes handy. Another way to evaluate a typeface combination is to take a close look at their x-heights, to see if they match. They should be very close at worst. Typefaces with similar x-height work better together as they have a similar visual weight. Especially when it comes to vertical rhythm (something we’ll cover in the next lesson).
+
+![Figure 34: Futura and Baskerville have a similar x-height which reinforces them as a good typeface combination.](fiugure-534.jpg)
+Figure 34: Futura and Baskerville have a similar x-height which reinforces them as a good typeface combination.
+
+### Some typefaces are meant to be together
+There are the so called super typefaces. Typefaces that come in more than one style. A sans-serif and a serif. Merriweather is a great example. So is Roboto. You simply can’t go wrong by using the styles of one super family. This can be a great way to start developing your typeface combining skills.
+
+![Figure 35: Some typefaces come in both serif and sans serif. You can’t go wrong if you combine these.](figure-535.jpg)
+
+### 4 Eliminate/choose a combination
+Based on the previous step, does the typeface match any of the evaluating factors? If not, you should probably eliminate the potential candidate. Repeat the steps 3 and 4 until you’re left with only one typeface. Does it match your grand design idea? Do you feel comfortable with it? Does it feel right? Not sure? Come back the next day. I’m not kidding. At this point you probably spent a few hours looking at typefaces and combinations of typefaces. It’s time to take a break. You’ll get a fresh look on your work by doing so. My personal guideline is: come back tomorrow, if it feels right, go with it, if not, change it.
+
+All of your potential candidates got eliminated? You’ll have to start all over. I told you this takes time. There’s still an option to go with only one typeface. It’s your choice.
+
+### Explore further
+1. [Combining Typefaces — Tim Brown](https://typekit.files.wordpress.com/2016/04/combiningtypefaces.pdf)
+2. [fonts.greatsimple.io — Google Fonts Combinations](http://fonts.greatsimple.io/)
+3. [Beautiful Web Type](http://chad.is/beautiful-web-type/)
+4. [How typography shapes our perception of truth](https://www.fastcodesign.com/3046365/errol-morris-how-typography-shapes-our-perception-of-truth)
+
 
 
 
