@@ -58,7 +58,8 @@ I tend to use both words. It simply depends on who I talk to. “Typeface” mig
 
 We don’t read letter per letter. We only do that when we’re children and are still learning to read. After that we read word by word. The words that we’ve become familiar with are stored in our brains. So reading is basically recognising shapes of words. Our eyes constantly move left and right in the process of reading. They do that so quickly that we don’t even notice. These eye movements are called saccades. They’re broken up by fixations which usually come at the end of words. After each line of text our eyes get a longer break as we switch focus to the next line in the text. Make these lines too long and the eyes will get tired quicker. Make the spacing between the lines too tight and our eyes will get confused on which line to start reading.
 
-![Figure 3: Saccades, eye movements, illustrated (Source: A List Apart).](figure-23.jpg)
+![Figure 3: Saccades, eye movements, illustrated (Source: A List Apart).](figure-23.png)
+Figure 3: Saccades, eye movements, illustrated (Source: A List Apart).
 
 Typography can improve a text’s readability by following the basic general principles that have been developed since the first printing machine back in the 15th century. These general principles are adapted to the way we read.
 
@@ -72,29 +73,52 @@ A common rule for setting the body text is to set it to a size that would match 
 
 ![Figure 4: Matching the font size with the text size from a book at an arm’s length. (Source: iA)
 ](figure-24.png)
+Figure 4: Matching the font size with the text size from a book at an arm’s length. (Source: iA)
  
 Recommended size for today’s screens is 16px for mobile and from 18 to 22 px for desktop. This also depends on the typeface. As we’ll see later in the course, some typefaces set at 16px may seem larger than others.
 
 “Type colour” in typography doesn’t mean actual colour like red, blue or green. Type colour means how heavy black type on a light background looks like. A typeface of the same size and same weight may seem heavier than another one.  
 
 ![Figure 5: The same text set in Merriweather seems larger and heavier than when set in Georgia.](figure-25.jpg)
+Figure 5: The same text set in Merriweather seems larger and heavier than when set in Georgia.
 
 ### Line width (measure)
 
 Reading very long lines of text is tiring for our eyes. Our eyes need constant pauses which are provided by line breaks. In that instance of switching to the next line, our eyes get that short pause. Short, but long enough to keep them going for longer. It’s like an engine that doesn’t run on full all the time so it keeps going longer without overheating.
 
 The ideal width of a line of text is from 45 to 75 characters—including spaces. Anything that reaches far from that range gets hard to read very quickly. Too much line switching when lines are too short and to few breaks for the eyes when they’re too long.
- 
+
+![Figure 6: Recommended line width in Google’s Material Design Guidelines (Source: material.io)](figure-26.png)
+Figure 6: Recommended line width in Google’s Material Design Guidelines (Source: material.io)
+
 ### Line-height (leading)
 
 Line-height, or leading as it’s usually referred to in print, is the main pillar of rhythm in typography. We’ll cover that later in the course, in the lesson 6—Rhythm in web typography. For now, let’s take a look at what affects the line-height.
+
+![Figure 7: Line-height (leading) works different on the web. It’s evenly distributed below and above the line of text.](figure-27.png)
+Figure 7: Line-height (leading) works different on the web. It’s evenly distributed below and above the line of text.
  
 Too many designers or web developers that I’ve met think of line-height as an isolated text feature. So they tend to set it based on what seems right. Consequently, line-height is something that gets set without too much consideration. But line-height is too important to be set so mindlessly. The width of the lines affects the line-height. The longer the lines, the more space between them is required. Type size affects the line-height. The larger the type, the larger the line-height should be as well. Type colour affects it too. Darker and heavier type requires more space between the lines. And in the end, the typeface itself may affect it as well. We’ll cover these later in the course but I already mentioned that some typeface may seem larger than others. Some, mostly serifed typefaces, will seem heavier. Those will require more space between the lines too.
 
 Now that you know that line-height is very important and that it should never be considered as an isolated feature, let’s look at general best practices. For paragraphs, ideal line-height is usually between 1,3 and 1,6. So a body text set at 16px should have a line-height from 21 to 26 px. This will depend on the things mentioned earlier: typeface design, type size, weight etc.
 
-Headings are usually much shorter so they need to have less space between the lines so they don’t look like they’re drifting apart. Recommended line-height for headings is from 1 to 1,2 so a heading set at 24 px will need a line-height from 24 to 29 px. This may seem a bit ridiculous at first but try it. Once you see the difference you can’t unsee it.
+![Figure 8: Same typeface, same font size, different colour. Darker text should have larger line-height.](figure-28.jpg)
+Figure 8: Same typeface, same font size, different colour. Darker text should have larger line-height.
+
+![Figure 9: Same typeface, same colour, different font size. Larger text should have larger line-height.](figure-29.jpg)
+Figure 9: Same typeface, same colour, different font size. Larger text should have larger line-height.
+
+![Figure 10: Same typeface, same font size, same colour, different line width (measure). The longer the line of text, the larger the line-height required.](figure-210.jpg)
+Figure 10: Same typeface, same font size, same colour, different line width (measure). The longer the line of text, the larger the line-height required.
  
+![Figure 11: Different typefaces, same font size, same colour. Typefaces that seem larger need more line-height.](figure-211.jpg)
+
+Headings are usually much shorter so they need to have less space between the lines so they don’t look like they’re drifting apart. Recommended line-height for headings is from 1 to 1,2 so a heading set at 24 px will need a line-height from 24 to 29 px. This may seem a bit ridiculous at first but try it. Once you see the difference you can’t unsee it.
+
+![Figure 12: Headings (especially larger ones) need a smaller line-height than body text.](figure-212.jpg)
+Figure 12: Headings (especially larger ones) need a smaller line-height than body text.
+
+
 Note that in languages that use capital letters more than others (German for example), it’s recommended to use a larger line-height.
 
 ### The equilateral triangle
@@ -103,6 +127,15 @@ There are some general best practices in typography but they’re never definite
 And so we come to what I call the Equilateral triangle of a perfect paragraph. We’ve looked at type size, measure and line-height in isolation (as much as we could). By doing so, we already learned that these features are interconnected. They can’t be considered in isolation and they never should be. That’s why an equilateral triangle is a perfect representation of a well designed paragraph of text. For it, we need a good type size that matches the measure, which matches the line height. Get one of them wrong and your triangle will get skewed.
 
 Unfortunately I can’t give you definite numbers of a perfect paragraph as there are millions of combinations out there. But I can give you a few examples that will help you train your eye. Try to pay attention to the details and compare the type size, the lengths of the lines and the spacing between them.
+
+![Figure 13: A perfectly balanced paragraph represented by an equilateral triangle.](figure-213.jpg)
+Figure 13: A perfectly balanced paragraph represented by an equilateral triangle.
+
+![Figure 14: Lines of text in this paragraph are too wide. The triangle isn’t equilateral anymore. To fix this we’d need to either make the type size and line-height larger or decrease the width of the line width.](figure-214.jpg)
+
+![Figure 15: The line-height of this paragarph is too large. The lines of text are starting to drift apart. This example could be improved if we increased the width of the lines of text. To properly fix it we’d also need to increase the font size a bit.](figure-215.jpg)
+
+![Figure 16: The font size is way too large in this paragraph. It forces the width of lines to 30 characters and completely skews the triangle. The lines of text are too close together. To fix this we’d either have to decrease the size of the text or increase both line-height and the width of the lines of text.](figure-216.jpg)
 
 ### Explore further
 * [How we read](https://alistapart.com/article/how-we-read)
