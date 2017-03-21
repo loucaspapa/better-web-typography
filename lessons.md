@@ -3,11 +3,11 @@ Better Web Type is an easy-to-follow web typography email course for web designe
 Created by [Matej Latin](https://betterwebtype.com/)
 
 ## Lessons
-* [1.1 Introduction to typography](#11-introduction-to-typography)
-* [1.2 Equilateral triangle of a perfect paragraph](#12-equilateral-triangle-of-a-perfect-paragraph)
-* [1.3 Anatomy of a typeface](#13-anatomy-of-a-typeface)
+1. [Introduction to typography](#1-introduction-to-typography)
+2. [Equilateral triangle of a perfect paragraph](#2-equilateral-triangle-of-a-perfect-paragraph)
+3. [Anatomy of a typeface](#3-anatomy-of-a-typeface)
 
-## 1.1 Introduction to typography
+## 1. Introduction to typography
 “Perfect typography is more science than an art” is a famous quote attributed to Jan Tschichold—the man that published his revolutionary book The New Typography in 1927. He, among other typographers from that era, had a profound impact in the field of typography. >?
 
 “Typography is more art than engineering—though engineering is certainly a part of it” is what Robert Bringhurst, author of The Elements of Typographic Style (recognised as the typography bible), believes in. 
@@ -52,7 +52,7 @@ I tend to use both words. It simply depends on who I talk to. “Typeface” mig
 * [Jan Tschichold](http://www.designishistory.com/1920/jan-tschichold/)
 * [Book: The Elements of Typographic Style by Robert Bringhurst](https://www.goodreads.com/book/show/44735.The_Elements_of_Typographic_Style?ac=1&from_search=true)
 
-## 1.2 Equilateral triangle of a perfect paragraph
+## 2 Equilateral triangle of a perfect paragraph
 
 > The reader should be able to read the message of a text easily and comfortably. This depends to a not inconsiderable extent on the size > of the type, the length of the lines and the leading (line-height).
 
@@ -144,7 +144,7 @@ Figure 13: A perfectly balanced paragraph represented by an equilateral triangle
 * [45 to 75 — Character counter to optimize line length](https://chrome.google.com/webstore/detail/45to75/efmppndinjbljeellfdkpghgblenbcdd/)
 * [Readability: the optimal line length](https://baymard.com/blog/line-length-readability)
 
-## 1.3 Anatomy of a typeface
+## 3 Anatomy of a typeface
 
 Typefaces come in all shapes and forms. Serif and sans-serif are the two main groups but each consists of numerous styles. Old style, transitional, neoclassical, slab, clarendon and glyphic for serifed typefaces; grotesque, square, humanistic and geometric for the sans serifs. Exploring these reminds me of space exploration. A vast amount of typefaces, each different from the other, each unique, each special. Just like stars and planets, despite their uniqueness, all typefaces have something in common—their anatomy. No matter how special or unique their style is, all typefaces share most of their main features. Looking at typefaces is just like gazing at the night sky and looking at the stars. Nothing special if you don’t know what you’re looking at but very interesting if you know where to look and recognizing unique features that define the typefaces (or stars).
 
