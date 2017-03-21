@@ -8,6 +8,7 @@ Created by [Matej Latin](https://betterwebtype.com/)
 3. [Anatomy of a typeface](#3-anatomy-of-a-typeface)
 4. [Choosing Typefaces](#4-choosing-typefaces)
 5. [Combining Typefaces](#5-combining-typefaces)
+6. [Rhythm in web typography](#6-rhythm-in-web-typography)
 
 ## 1. Introduction to typography
 “Perfect typography is more science than an art” is a famous quote attributed to Jan Tschichold—the man that published his revolutionary book The New Typography in 1927. He, among other typographers from that era, had a profound impact in the field of typography. >?
@@ -346,6 +347,117 @@ All of your potential candidates got eliminated? You’ll have to start all over
 2. [fonts.greatsimple.io — Google Fonts Combinations](http://fonts.greatsimple.io/)
 3. [Beautiful Web Type](http://chad.is/beautiful-web-type/)
 4. [How typography shapes our perception of truth](https://www.fastcodesign.com/3046365/errol-morris-how-typography-shapes-our-perception-of-truth)
+
+## 6 Rhythm in Web Typography
+
+Rhythm in typography is just like rhythm in music. A text can either flow like a masterpiece symphony performed by an in-tune orchestra or it can be a disjointed, flimsy song by a one-man band wannabe. Just like in music, where order is more pleasurable to our ears than chaos, so is a well designed text with an established rhythm easier to read and more enjoyable to consume by our eyes. Ears and eyes are just the sensory tools, it’s our mind that processes this information. And our mind is a machine for pattern recognition. That’s why a well-tuned, rhythmic and proportional text will always triumph over a scrappy one. Unlike in music, there’s two types of rhythm in typography: horizontal and vertical.
+
+![Figure 36: Vertical and horizontal rhythm in typography.](figure-636.jpg)
+Figure 36: Vertical and horizontal rhythm in typography.
+
+The music analogy works very well with typography because your text will either be easy to read and the reader will get into flow—not focusing on reading but simply consuming the content —or struggle through the information before finally giving up. Horizontal rhythm mostly impacts the legibility while vertical rhythm impacts the readability of the text and establishes a sense of visual hierarchy.
+
+### Horizontal rhythm
+
+#### Letter-spacing (tracking)
+Letter-spacing is more commonly known as tracking in print design. It can have a massive impact on the legibility of the words so it should be used with caution. Letter-spacing lower case is not recommended. A man who would letterspace lower case would shag sheep, Frederic Goudy used to say. Letterspacing impacts legibility because it makes the words harder to be deciphered by our brain. Reading slows down, even for fast readers. Unless you have a very good reason for doing so, don’t letterspace the main body text.
+
+There are two occasions when letter spacing can have a positive impact. Headings tend to be larger and heavier than the body text. Because of their larger size, the spacing between the letters also looks optically larger than at smaller sizes. In this case, it’s a good idea to slightly reduce the letterspacing. We’re talking about 3–5% not more. This will make your heading a bit more compact, and a bit closer to what type in the body looks like.
+
+![Figure 37: Applying a negative letter-spacing to headings makes them more compact and closer to what body type looks like.](figure-637.jpg)
+Figure 37: Applying a negative letter-spacing to headings makes them more compact and closer to what body type looks like.
+
+Another occasion where letterspacing can be useful is when applied to small caps or uppercase text only. Using uppercase for longer text is a really bad idea, so this might be best combined with headings again. Whenever we have a line of text set in all uppercase or small caps (we’ll cover small caps in lesson 9), it’s a good idea to increase the spacing between the letters just a bit. Again, we’re talking about small increases, but just enough to make a difference. My recommendation is from 5 to 10%.
+![Figure 38: Applying letter-spacing to uppercase or small caps helps with legibility.](figure-638.jpg)
+Figure 38: Applying letter-spacing to uppercase or small caps helps with legibility.
+
+By doing so, we make the uppercase letters and words easier to read and process. Besides that, a bit more space between the letters will add a touch of sophistication to our design. Pay attention to well designed products or brands that use all uppercase in their branding. You’ll notice that most of them are letterspaced.
+
+Letterspacing acronyms, and long series of digits is also recommended.
+
+### Kerning
+Spacing between different letters is far from equal. Each letter comes with a default set of spacing around it, no matter the neighbouring letter. That’s why we get inconsistencies like this:
+
+![Figure 39: Bad kerning, in typography also known as keming (Source: Sky Fontanet’s ePortfolio).](figure-639.jpg)
+Figure 39: Bad kerning, in typography also known as keming (Source: Sky Fontanet’s ePortfolio).
+
+Kerning—altering the spaces between particular pairs of letters—can resolve these issues. The result is a much better proportioned word and optical perfection.
+
+![Figure 40: Figure 40: Fixing the bad kerning.](figure-640.jpg)
+Figure 40: Fixing the bad kerning.
+
+Most web browsers default kerning to auto. This means that the kerning will be enabled for larger type and disabled for smaller. Bad kerning is not as obvious on small type. If you wish, you can control it like this:
+
+font-kerning: auto; // default
+font-kerning: normal; // enables kerning
+font-kerning: none; // disables kerning
+
+That’s about it when it comes to what we can do with the default browser support right now. This is probably not good enough for special occasions when we need to move a particular letter by x pixels to achieve that optical perfection. Thankfully, there’s tools like [Lettering.js](http://letteringjs.com/). With it, we can control the positioning (and also style) of each letter.
+
+### Don’t justify on the web
+A break in music has a meaning. It separates the sound from silence. Nothingness from the rich sound of a chord. It seemingly breaks the rhythm (even though breaks in music always match the rhythm). We get the same effect in typography. A combination of letters, words and empty spaces define the rhythm. For a flow of reading, that rhythm needs to be consistent. And because (as we learned earlier) we read word by word, too much spacing between words breaks the rhythm. It breaks the flow of reading. It turns the easiest text to read into one that is hard to consume. No matter the language or words used. I still encounter this far too often on the web:
+![Figure 41: Comparing left-aligned and justified text on the web (No hyphenation).](figure-641.jpg)
+Figure 41: Comparing left-aligned and justified text on the web (No hyphenation).
+
+![Figure 42: Comparing two justified paragraphs, one hyphenated one not.](figure-642.jpg)
+Figure 42: Comparing two justified paragraphs, one hyphenated one not.
+
+Web browsers render justified text very poorly. They don’t have the necessary algorithms to properly set the spacing between words and even individual letters. That’s why justified texts come with patches of space between the words. The rivers of white between the black of text. This makes it very hard to read so justifying text on the web should be avoided at all costs. Web browsers are getting better in supporting hyphenation though. If you do use justified text, complement it with hyphenation.
+
+### Vertical rhythm
+Let’s say that a website has the main body text set in 20 pixels and a line-height of 30 pixels. The measure (line width) should be appropriate for this size and line-height—600 pixels looks just about right. We now have all we need to set up the vertical rhythm throughout the page. To do that, we need a basic rhythmical unit. In typography, that’s leading (line-height). We can see it, by adding a 30 pixels tall baseline grid to our website.
+
+![Figure 43: Baseline grid indicates equal line-height and vertical rhythm.](figure-643.png)
+Figure 43: Baseline grid indicates equal line-height and vertical rhythm.
+
+Note: Unlike in print and graphic design, the baseline grid lies right in the middle of the lines. Lots of people ask me if it shouldn’t lie right at the bottom of the bodies of letters. Not on the web. Take a look at how web browsers interpret a line of text:
+
+![Figure 44: Baseline grid on web falls right in the middle between the lines. Unlike in print, where letter bodies lie directly on it.](figure-644.png)
+Figure 44: Baseline grid on web falls right in the middle between the lines. Unlike in print, where letter bodies lie directly on it.
+
+We only have a paragraph of text for now, so everything looks right. To keep this rhythm going, we need to use the line-height as a base unit for every size, margin and padding on the site. Let’s see. We want to add a title to our text. We assign a size of 55 pixels to it to make it stand out. Its line-height now needs to be an even multiple of the line-height. This also applies for its margins—especially top and bottom ones.
+
+ h3 {
+  font-size: 55px;
+  line-height: 60px; // = 2 * 30px (body text line-height)
+  margin-top: 90px; // = 3 * 30px
+  margin-bottom: 30px; // = 1 * 30px
+ }
+
+Note: I’m using pixels for these examples but you should be using units like em, rem or just a decimal 1.5 or percentage (150%) value for line-height.
+
+![Figure 45: heading 3’s line-height equals 2 lines, its margins equal 3 lines on top and one line at the bottom. Everything falls in its place.](figure-645.png)
+Figure 45: heading 3’s line-height equals 2 lines, its margins equal 3 lines on top and one line at the bottom. Everything falls in its place.
+
+We assigned a line-height of 60 pixels because it’s the next multiple of our base line-height (30 pixels) that comfortably accommodates the title set at 55 pixels. A guideline that I like to stick with is that the bottom margin should be noticeably smaller than the top one. The title needs to visually connect with the text beneath it. The text it’s referring to. And that’s exactly what we want to achieve with vertical rhythm and visual hierarchy. A reader can now understand the structure of the text by simply scanning it.
+
+Because we’ll be needing this in most cases it’s the best practice to assign default line-height, margins and paddings to all elements and deviate from it  only when necessary.
+
+ * {
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 30px; // = 1 * 30px
+ }
+ 
+So if you want your lists to have a specific bottom margin, you’d go for something like this:
+
+ ul, ol {
+  margin-bottom: 60px; // = 2 * 30px
+ }
+ 
+What happens when an image breaks the vertical rhythm might be the question that’s on your mind at the moment. You’re right. Images come in various sizes. It’s impossible to expect that we’ll be able to control their height in every occasion. Especially for large scale websites. What do we do then? My suggestions: let it be. Use the baseline grid as a guide, not as a restraint. Your text and your page still has vertical rhythm. It still has an established visual hierarchy. Large solid blocks of content, which images certainly are, don’t visually break it up. It may break your grid yes, but at the end of the day, it doesn’t matter.
+
+> Clarity of meaning and ease of reading always trump the formal restraints of working with grids.
+—John Kane
+
+### Explore further
+1. [Why is Vertical Rhythm an Important Typography Practice?](https://zellwk.com/blog/why-vertical-rhythms/)
+2. [Kern Type, the kerning game](http://type.method.ac/)
+3. [Proper hanging punctuation in CSS by Kenneth Ormandy](https://github.com/kennethormandy/hanging-punctuation)
+4. [Gutenberg—A Meaningful Web Typography Starter Kit](http://matejlatin.github.io/Gutenberg/)
+5. [Grid Lover](https://www.gridlover.net/try)
+
+
 
 
 
