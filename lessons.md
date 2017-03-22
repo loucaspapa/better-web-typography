@@ -635,7 +635,7 @@ Note that if you set letter-spacing to your text it will not feature any ligatur
 1. [Typographic ligature](https://www.wikiwand.com/en/Typographic_ligature)
 2. [Tomorrow’s web type today: The fine flourish of a ligature](http://www.elliotjaystocks.com/blog/the-fine-flourish-of-the-ligature/)
 
-## Small Caps & Figures
+## Small Caps and Figures
 We covered ligatures and how they affect legibility and separate good typographers from average ones in the previous chapter. We’re diving deeper into details of typography with each chapter and small caps and figure styles are definitely on the micro level side of typography. Let’s take a look at two texts side by side.
 ![Figure 56: Compare the two paragraphs. One of them has small caps and oldstyle figures enabled.](figure-956.png)
 Figure 56: Compare the two paragraphs. One of them has small caps and oldstyle figures enabled.
