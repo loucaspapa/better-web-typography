@@ -548,9 +548,87 @@ This is the formula to calculate any value in a given modular scale. That’s wh
 In the third and final part we just write that main formula in code and it’s ready to use. We preset the two out of three parameters in that formula, so all it needs is the value parameter. ms(3) means that we want the third size on the scale.
 
 ### Explore further
-* [More Meaningful Typography](https://alistapart.com/article/more-meaningful-typography)
-* [Modular Scale](http://www.modularscale.com/)
-* [Modular Scale SASS](https://github.com/modularscale/modularscale-sass)
-* [Sketch plugin typographic scale](https://github.com/automat/sketch-plugin-typographic-scale)
+1. [More Meaningful Typography](https://alistapart.com/article/more-meaningful-typography)
+2. [Modular Scale](http://www.modularscale.com/)
+3. [Modular Scale SASS](https://github.com/modularscale/modularscale-sass)
+4. [Sketch plugin typographic scale](https://github.com/automat/sketch-plugin-typographic-scale)
 
+## 8 Ligatures
+In this lesson we start diving deeper into typography. We start exploring the world of micro typography. We’ll look at some aspects that impact the legibility the most. Studying typography on the micro level will help you produce top-notch typographic styles. It will help you understand what difference small details can make. It separates typographic masters from the newbies.
 
+Ligatures. Now that’s a fancy word. You may have never heard of it before. Or you might have heard a designer mention it and shrugged it off as it’s probably something that doesn’t concern you (for the web developers in the course). Well, you may have never heard of it or payed attention to it but I guarantee you that you’ve seen it before. And once you know what ligatures are, you’ll never be able to unsee them. You’ll probably start noticing them everywhere. Let’s take a look at the definition of a ligature.
+
+> In writing and typography, a ligature occurs where two or more graphemes or letters are joined as a single glyph.
+- Wikipedia
+
+The most common ligature, that everyone has seen is the ampersand. Yes, the “&” symbol. It comes in various shapes but in it’s core, it’s a combination of letters “e” and “t”—”et” in Latin meaning “and”. How cool is that?
+![Figure 49: The evolution of the ampersand ligature (Source: Wikipedia).](figure849.png)
+Figure 49: The evolution of the ampersand ligature (Source: Wikipedia).
+
+An interesting fact for the German speaking readers, the “sharp s” or “ß” is also a ligature (a combination of ſ and s) but just like the ampersand it’s become a character of its own.
+
+### Origin of ligatures
+Before Gutenberg made his movable type printing machine, all books were handwritten. Every book was a unique copy, usually transcribed by monks. Can you imagine transcribing a book like the Bible? It took a long time. So the scribes that were transcribing these came up with clever ways to speed the process up. Even if just by little. They started combining some letters into single shapes.
+
+When the printing machine was first invented, it closely imitated the medium that came before it—handwritten books. With that, it imitated the ligatures as well. But in print, besides saving time, there was another reason for combining letters into single glyphs—aesthetics. Take a look at the following sets of characters.
+
+![Figure 50: There’s nothing obviously wrong with these sets of letters.](figure-850.png)
+Figure 50: There’s nothing obviously wrong with these sets of letters.
+
+![Figure 51: All the unappealing features of these letter sets in Georgia.](figure-851.png)
+Figure 51: All the unappealing features of these letter sets in Georgia.
+
+Take a close look. Notice that some letters collide with others (especially those set in Georgia). The combination of “f” and “i” is particularly noticeable. Particularly unappealing as well. This is where typography really grabs you by the legs, starts pulling and never lets you go. Once you start noticing these little details, there’s no way back. So what is the solution for this unappealing set of letters? A ligature. Or ligatures, because there’s quite a few of them still in use today.
+
+![Figure 52: Same sets of letters, with and without ligatures. Can you spot all the differences?](figure-852.png)
+Figure 52: Same sets of letters, with and without ligatures. Can you spot all the differences?
+
+### What's the point of ligatures?
+So ligatures were designed to save time, improve the aesthetic aspect of a text or typeface and to improve the legibility. With transcribing books and hand-setting type for printing being done and dusted, we’re only left with the aesthetic aspect and legibility. Remember how we said that horizontal rhythm affects legibility? Ligatures can play a noticeable part in improving legibility. Take a look at the figure 53. We have two sentences. They’re the same with a purpose. The first sentence doesn’t have the ligatures enabled while the second one does. Notice the lines that indicate the starts and the ends of the sentences. Notice the difference in the width. The ligatures cause that difference. That’s why they have an impact on vertical rhythm, and that’s why they have an impact on legibility.
+![Figure 53: Ligatures help keep the horizontal rhythm consistent.](figure-853.png)
+Figure 53: Ligatures help keep the horizontal rhythm consistent.
+
+### Types of ligatures
+There’s many types of ligatures but when it comes to web typography, the two major groups are common ligatures and discretionary ligatures.
+
+### Common ligatures
+These are the ligatures that substitute letter combinations like “ff”, “fi”, “fl”, “ffi”, “ffl”, “th”. These are enabled by default by most web browsers. If you want to disable them for some particular reason, you can do so with using this:
+ 
+
+ .class {
+   font-variant-ligatures: common-ligatures;
+   -moz-font-feature-settings: "liga", "clig";
+   -webkit-font-feature-settings: "liga", "clig";
+   font-feature-settings: "liga", "clig";
+ }
+
+### Discretionary ligatures
+These are the non-standard ligatures and usually don’t really contribute to legibility at all. They’re much more stylistic then their common counterparts. Examples are letter combinations of “ch”, “ck”, “ct” and “st” (figure 54). It’s usually best to avoid using them but for those rare cases that you do, you can do so like this:
+
+ 
+ .class {
+   font-variant-ligatures: discretionary-ligatures;
+   -moz-font-feature-settings: "dlig";
+   -webkit-font-feature-settings: "dlig";
+   font-feature-settings: "dlig";
+ }
+ 
+![Figure 54: Discretionary ligatures (Source: Lucas Fonts).](figure-854.png)
+ 
+### Contextual ligatures
+Contextual ligatures usually come with the script typefaces. In most cases they combine the letters so it looks like they were written in one stroke. If you do use a script typeface it’s recommended that you enable these ligatures if available. The text set in this typeface will look more genuine (see comparison in figure 55). Controlling contextual ligatures is as easy as (if the typeface you’re using supports them):
+
+![Figure 55: Contextual figures (Source: Adobe)](figure-855.png)
+Figure 55: Contextual figures (Source: Adobe)
+
+#### Other notes on using ligatures on the web
+
+If you’re looking for the quickest and most basic way to enable or disable ligatures look no further than text-rendering property. It will enable the common ligatures and kerning (Chrome and Firefox do this by default).
+
+ text-rendering: optimizeLegibility; //enables common ligatures and kerning
+ 
+Note that if you set letter-spacing to your text it will not feature any ligatures. The browsers will strip them away.
+
+### Explore further
+1. [Typographic ligature](https://www.wikiwand.com/en/Typographic_ligature)
+2. [Tomorrow’s web type today: The fine flourish of a ligature](http://www.elliotjaystocks.com/blog/the-fine-flourish-of-the-ligature/)
