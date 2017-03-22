@@ -562,7 +562,7 @@ Ligatures. Now that’s a fancy word. You may have never heard of it before. Or 
 - Wikipedia
 
 The most common ligature, that everyone has seen is the ampersand. Yes, the “&” symbol. It comes in various shapes but in it’s core, it’s a combination of letters “e” and “t”—”et” in Latin meaning “and”. How cool is that?
-![Figure 49: The evolution of the ampersand ligature (Source: Wikipedia).](figure849.png)
+![Figure 49: The evolution of the ampersand ligature (Source: Wikipedia).](figure-849.png)
 Figure 49: The evolution of the ampersand ligature (Source: Wikipedia).
 
 An interesting fact for the German speaking readers, the “sharp s” or “ß” is also a ligature (a combination of ſ and s) but just like the ampersand it’s become a character of its own.
