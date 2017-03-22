@@ -457,10 +457,99 @@ What happens when an image breaks the vertical rhythm might be the question that
 4. [Gutenberg—A Meaningful Web Typography Starter Kit](http://matejlatin.github.io/Gutenberg/)
 5. [Grid Lover](https://www.gridlover.net/try)
 
+## 7 Modular scale & meaningful typography
 
+How do you assign sizes to type when you work on a website? Do you just randomly pick numbers depending on what you think looks good? Do you usually end up with way too many different sizes and no idea where they came from? Does your website type start to look chaotic after a while? How about your CSS? Can you manage the upkeep without going crazy?
 
+I remember how I used to set type sizes before I met the idea of modular scales. It was very similar to what I described above. No real reason for a particular size. No real meaning. It was all just numbers. Random numbers mostly. Main body type..? 16px should be fine. Heading one..? Yeah let’s go for 40px. Figure caption..? 15px? Why not. This was my process back then.
 
+A modular scale brings order, harmony and meaning to your type sizes, code, typography in general and in the end, what matters the most, your website.
 
+The next time you need to choose a size for a particular text on the website you don’t choose from the infinite sizes incremented by 1 pixel, you choose from a finite range of predefined and calculated sizes. This will help you keep your code modular and therefore clean and easier to understand. As this works well for you, it works equally well for the reader. Instead of figuring out what numerous different text sizes represent, they only have to figure out a few. Because they repeat more often it’s easier to decipher their role and the relationship between them. The visual hierarchy and order are properly established.
 
+Most graphic design tools come with a default typographic scale. So do some front end development frameworks.
+
+![Figure 46: Diatonic scale.](figure-746.jpg)
+Figure 46: Diatonic scale.
+
+This is the so called diatonic scale. You probably stumbled upon it before. I’m sure designers that work in either Photoshop or Sketch have. In the worst case you follow the sizes in this scale. “Worst scale” here sounds worse than it should, as there’s nothing wrong with using this scale. It’s a scale like any other. But sometimes you may want to experiment with different ones. Throw the boring out of the window and bring in something new. Something fresh.
+
+Tim Brown from Adobe came up with the idea of Modular scale, built a tool to create your own scales and presented it to the web design community. The idea of a modular scale is simple: create your own scale by setting some base values like text size and line width.
+
+![Figure 47: Modular Scale by Tim Brown.](figure-746.jpg)
+Figure 47: Modular Scale by Tim Brown.
+
+### Using a modular scale
+
+##### 1 Choose your base size
+Once you decided what typeface to use for your main body you need to find out what size works best. As we’ve seen before, not all typefaces sizes are equal. Some seem taller or bigger, some shorter and lighter. Put it in your browser and experiment with the size, line-height and measure. Once you decided what size works best, use it as your base size for the modular scale.
+
+#### 2 Choose a scale
+There’s quite a few to choose from. Explore and compare them a bit. The golden section is probably the most popular. It’s been popular in graphic design and architecture for ages. It’s based on the Fibonacci numbers which produce a pattern that is supposedly present everywhere in the nature and the universe. The one that I found works best for me is the Perfect Fifth with a ratio of 2:3. I find it to be more flexible than the rest. The goal here is to find out what works best for you and come up with your own unique style.
+
+### 3 Define all your sizes so they match the scale
+Once you decided which scale you’ll use, you must define all your text sizes by choosing one from the scale.
+
+**Example:**
+Let’s say we decided to set our main body text at 18px and we chose the Perfect Fifth scale. We now want to set the basic text sizes that we’ll use: headings 1 to 4, figure caption and the small print. These are the values that the scale offers to choose from:
+![](figure-700.png)
+As we only need headings 1, 2, 3 and 4 we need four sizes larger than our base. We also need two sizes smaller than the base for the figure caption and small print text. So we may assign the sizes like so:
+Elements	          Size
+Heading 1	         3.797em
+Heading 2	         2.531em
+Heading 3	         1.668em
+Heading 4	         1em
+Figure caption	    0.75em
+Small	             0.5em
+
+### Don’t forget about the vertical rhythm
+Our text sizes still need to fit into our baseline grid which defines our vertical rhythm, like we covered in the previous chapter. In this case, the heading 1 is set at 60px so it will need a line-height of 4 * line-height, which is 72px. Actually, 72 pixels might be too much, se let’s use 3.5 * line-height which results in 63 pixels. Much closer to that 1.1 to 1.3 range recommended for headings line-height. And don’t worry about that 3.5 multiple. You website will still have the correct vertical rhythm. If you do use multiples with .5, you’ll need to use a double grid, like my starter kit Gutenberg does. As I said earlier in the book, there’s no particular rules in typography. It’s up to you to shape your own or as Robert Bringhurst put it best:
+
+> By all means break the rules, and break them beautifully, deliberately and well.
+
+![Figure 48: Gutenberg, the meaningful web typography starter kit, uses a double baseline grid to make it more flexible when it comes to font sizes and margins.](figure-748.jpg)
+Figure 48: Gutenberg, the meaningful web typography starter kit, uses a double baseline grid to make it more flexible when it comes to font sizes and margins.
+
+### A word on preprocessors
+I’m sure the developers going through these can already see how this fits perfectly with the typical development mentality. It’s modular, hence the name Modular Scale, and scalable. And what’s best, this works great with the CSS preprocessors. Let’s take a look at how we’d set it up in Sass in three easy steps.
+
+ // 1. Base size and ratio
+ $base: 1.125em; //= 18px
+ $ratio: 1.5; // Perfect Fifth
+
+ // 2. The formula for modular scale is (ratio^value)*base so we need a power function
+ @function pow($number, $exponent) {
+   $value: 1;
+   @if $exponent > 0 {
+     @for $i from 1 through $exponent {
+        $value: $value * $number;
+      }
+   }
+   @return $value;
+ }
+
+ // 3. Let's make it simpler to use by combining everything under one roof
+ @function ms($value, $ms-ratio: $ratio, $ms-base: $base){
+   $size: pow($ms-ratio, $value)*$ms-base;
+   @return $size;
+ }
+
+ h1 {
+   font-size: ms(3); // = 60.75px
+ }
+
+All we need to use modular scale in a preprocessor like Sass is a couple of variables and functions. Each modular scales breaks down into a single number. 1.5 for the Perfect Fifth, for example. So we save that to the variable $ratio. The other variable we need is the base font size. This needs to match the size of your body font. It’s 18px in this example so I set it to 1.125em.
+
+(ratio^value)*base
+
+This is the formula to calculate any value in a given modular scale. That’s why we need the power formula.
+
+In the third and final part we just write that main formula in code and it’s ready to use. We preset the two out of three parameters in that formula, so all it needs is the value parameter. ms(3) means that we want the third size on the scale.
+
+### Explore further
+* [More Meaningful Typography](https://alistapart.com/article/more-meaningful-typography)
+* [Modular Scale](http://www.modularscale.com/)
+* [Modular Scale SASS](https://github.com/modularscale/modularscale-sass)
+* [Sketch plugin typographic scale](https://github.com/automat/sketch-plugin-typographic-scale)
 
 
