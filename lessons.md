@@ -633,3 +633,91 @@ Note that if you set letter-spacing to your text it will not feature any ligatur
 ### Explore further
 1. [Typographic ligature](https://www.wikiwand.com/en/Typographic_ligature)
 2. [Tomorrow’s web type today: The fine flourish of a ligature](http://www.elliotjaystocks.com/blog/the-fine-flourish-of-the-ligature/)
+
+## Small Caps & Figures
+We covered ligatures and how they affect legibility and separate good typographers from average ones in the previous chapter. We’re diving deeper into details of typography with each chapter and small caps and figure styles are definitely on the micro level side of typography. Let’s take a look at two texts side by side.
+![Figure 56: Compare the two paragraphs. One of them has small caps and oldstyle figures enabled.](figure-956.png)
+Figure 56: Compare the two paragraphs. One of them has small caps and oldstyle figures enabled.
+
+Now try to answer the following questions. Check the figure 56, a couple of times if you need to.
+1. Which of the two looks more sophisticated?
+2. Which of the two looks better balanced?=
+3. Do you notice any major differences between the two?
+
+The questions are a bit tricky because you may be able to answer confidently to questions 1 and 2 but without noticing major differences that the question 3 is asking about.
+
+To get better in typography, all you really require is knowledge about the whats and the whys and the right tools. Tools may vary differently and can come in a shape of a typeface that has a good support of Open-type features. Or it may be an actual tool that helps you produce the code and a website with better typography. That’s why we’re learning about details like these. It may seem irrelevant at first, but in typography it’s the smallest details like these that really make a big difference.
+
+> Inherent quality is part of absolute quality and without it things will appear shoddy. The users may not know why, but they always sense it.
+- Erik Spiekermann
+
+### Small Caps
+Small caps are exactly what the name implies. They’re a smaller versions of capital letters. Being smaller, they’re set at the same height and weight as their lowercase counterparts. They’re mainly used inside body text because we want them to merge with it better. Take another look at figure 56. Can you see how abbreviations in the first paragraph stand out? We don’t want that. We want them to blend in as much as possible. It makes our text seem professional and balanced.
+
+### Fake vs real small caps
+You can turn any text on the web into small caps with CSS. But most of the time, those aren’t the right small caps. They’re the so called “fake small caps”. “Fake” sounds bad, and it is. What the text editor does is reduces the size of actual capital letters. So it literally fakes small caps. And in my opinion, these are even worse than using the usual capital letters.
+
+![Figure 57: Comparing real to fake small caps. Notice how lighter the fake ones seem to be, compared to their uppercase counterpart. There’s no difference in weight with real small caps.](figure-957.png)
+Figure 57: Comparing real to fake small caps. Notice how lighter the fake ones seem to be, compared to their uppercase counterpart. There’s no difference in weight with real small caps.
+
+Take a look at the details of these letters. Compare their weight. Then take a look at the figure below. It gets even worse when they’re used in an actual body of text. It makes them stand out even more than if they’re just regular capital letters. For the wrong reasons as well.
+
+![Figure 58: Notice how fake small caps actually stand out from the text. The exact opposite of what their purpose is.](figure-958.png)
+Figure 58: Notice how fake small caps actually stand out from the text. The exact opposite of what their purpose is.
+
+### How to properly use small caps
+Small caps seem to be one of the things that were completely left behind at the start of digital transition in typography. It’s only lately that they started gaining popularity. It seems that the web is finally coming to a point of a mature medium.
+
+### Check the typeface
+In order to use the real small caps, your typeface of choice needs to support them. These typefaces are rare. If they do support them, it means they’ll be quite a bit heavier in Kb. When small caps are included, they usually come in form of an OpenType feature. So check those first. If they’re not there, check if there’s another font of the same name but with “SC” or “Small caps” added to its name. For example P22 Underground on TypeKit comes with many additional fonts which are different weights of small caps.
+
+![Figure 59: Small caps come as separate fonts in the P22 Underground typeface.](figure-959.png)
+Figure 59: Small caps come as separate fonts in the P22 Underground typeface.
+
+### Search for a small caps fonts
+Many of the typefaces don’t have a small caps font included, or don’t support it as an OpenType feature. In that case, you could still try to find a matching small caps font elsewhere. The emphasis here is on matching. Don’t use something that’s close enough. If you’re using Garamond as your body typeface, you need the Garamond small caps font. I found a “Garamont” font on fonts.com that is based on Garamond and has small caps fonts included. Sometimes the small caps fonts come alone.
+
+### Enabling small caps
+If your font supports the small caps as an open-type feature you can enable them by using the following CSS:
+
+ .class {
+   font-variant-caps: small-caps;
+   -moz-font-feature-settings: "smcp";
+   -webkit-font-feature-settings: "smcp";
+   font-feature-settings: "smcp";
+ }
+
+If it doesn’t and you need to use an additional font for that, you need to load that font separately through font-face.
+
+If you can’t find either way to use real small caps, restrain from using them at all. Use regular capital letters instead. Just don’t use fake small caps.
+
+![Figure 60: Oldstyle figures bodies match the x-height of the typeface and have ascenders and descenders. Lining figures match the height of capital letters and don’t have ascenders and descenders.](figure-960.png)
+Figure 60: Oldstyle figures bodies match the x-height of the typeface and have ascenders and descenders. Lining figures match the height of capital letters and don’t have ascenders and descenders.
+
+### Old style figures
+Old style figures are quite rare these days. Just like small caps, they were left out when the digital revolution started. They may be called old style figures and they even seem a bit more classic than their alternative (lining figures) but they have the same purpose as small caps. Blend in with the text so they don’t affect the overall balance. 
+
+They come in three forms in web typography: as part of a small caps font, default figures of the main font or as an OpenType feature. A typeface like Merriweather has the old style figures (OSF for short) as default figures. Mrs Eaves comes with an OpenType support for OSF and any small caps font will come with the OSF. 
+
+Whenever the OSF come as an OpenType feature they can be enabled with this code:
+
+ .class {
+   font-variant-numeric: oldstyle-nums;
+   -moz-font-feature-settings: "onum";
+   -webkit-font-feature-settings: "onum";
+   font-feature-settings: "onum";
+ }
+ 
+There’s not much we can do about the other two forms of OSF support.
+
+### Lining figures
+Lining figures are called lining because they extend from the top to the bottom line of the capital letters in a font. They disrupt the balance inside the body text and they are the widely used alternative to the OSF.
+
+My recommendation is to avoid using typefaces without support for OSF. But then again, this might be too limiting. You should consider limiting your choice of typeface so far only if you know your text will include many numerical values (read the text, remember?).
+
+
+### Explore further
+1. [Syntax for OpenType features in CSS](https://helpx.adobe.com/typekit/using/open-type-syntax.html#onum)
+2. [Text figures](https://www.wikiwand.com/en/Text_figures)
+3. [Small caps](http://ilovetypography.com/2008/02/20/small-caps/)
+
