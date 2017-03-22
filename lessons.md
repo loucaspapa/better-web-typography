@@ -477,7 +477,7 @@ This is the so called diatonic scale. You probably stumbled upon it before. I’
 
 Tim Brown from Adobe came up with the idea of Modular scale, built a tool to create your own scales and presented it to the web design community. The idea of a modular scale is simple: create your own scale by setting some base values like text size and line width.
 
-![Figure 47: Modular Scale by Tim Brown.](figure-746.jpg)
+![Figure 47: Modular Scale by Tim Brown.](figure-747.jpg)
 Figure 47: Modular Scale by Tim Brown.
 
 ### Using a modular scale
