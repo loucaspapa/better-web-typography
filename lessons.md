@@ -9,7 +9,7 @@ Created by [Matej Latin](https://betterwebtype.com/)
 4. [Choosing Typefaces](#4-choosing-typefaces)
 5. [Combining Typefaces](#5-combining-typefaces)
 6. [Rhythm in web typography](#6-rhythm-in-web-typography)
-7. {Modular scale & meaningful typography](#7-modular-scale--meaningful-typography)
+7. [Modular scale & meaningful typography](#7-modular-scale--meaningful-typography)
 
 ## 1. Introduction to typography
 “Perfect typography is more science than an art” is a famous quote attributed to Jan Tschichold—the man that published his revolutionary book The New Typography in 1927. He, among other typographers from that era, had a profound impact in the field of typography. >?
